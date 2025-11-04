@@ -82,9 +82,19 @@
       0% { transform: translateY(0) rotate(0deg); opacity: 1; }
       100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
     }
+
+    audio {
+      display: none;
+    }
   </style>
 </head>
 <body>
+  <!-- Auto-play background music -->
+  <audio autoplay loop>
+    <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
+    <!-- You can replace the above URL with your own MP3 or YouTube link (converted to direct audio) -->
+  </audio>
+
   <div class="photo">
     <img src="https://media.licdn.com/dms/image/v2/D4D35AQEH4u2C0m-A9A/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1696353158862?e=1762848000&v=beta&t=LwJ6YnSUENPQ_pBG6epX_9VvhqqJ4eP1saJv2MmoCY0" alt="Priyanka">
   </div>
