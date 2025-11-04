@@ -83,17 +83,21 @@
       100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
     }
 
-    audio {
+    iframe {
       display: none;
     }
   </style>
 </head>
 <body>
-  <!-- Auto-play background music -->
-  <audio autoplay loop>
-    <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
-    <!-- You can replace the above URL with your own MP3 or YouTube link (converted to direct audio) -->
-  </audio>
+
+  <!-- Hidden YouTube background music -->
+  <iframe 
+    width="0" 
+    height="0" 
+    src="https://www.youtube.com/embed/bbPA5To-Q6I?autoplay=1&loop=1&playlist=bbPA5To-Q6I" 
+    frameborder="0" 
+    allow="autoplay">
+  </iframe>
 
   <div class="photo">
     <img src="https://media.licdn.com/dms/image/v2/D4D35AQEH4u2C0m-A9A/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1696353158862?e=1762848000&v=beta&t=LwJ6YnSUENPQ_pBG6epX_9VvhqqJ4eP1saJv2MmoCY0" alt="Priyanka">
@@ -111,5 +115,6 @@
     <div class="balloon" style="left:70%; animation-delay: 3s;"></div>
     <div class="balloon" style="left:90%; animation-delay: 4s;"></div>
   </div>
+
 </body>
 </html>
