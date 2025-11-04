@@ -8,11 +8,27 @@
       background-color: #ffe6f0;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       overflow: hidden;
+    }
+
+    .photo {
+      text-align: center;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ff69b4;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
     }
 
     .popup {
@@ -28,11 +44,13 @@
     h1 {
       color: #ff1493;
       font-size: 2.5em;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 1.2em;
       color: #333;
+      margin: 0;
     }
 
     @keyframes fadeIn {
@@ -47,6 +65,7 @@
       height: 100%;
       pointer-events: none;
       overflow: hidden;
+      z-index: -1;
     }
 
     .balloon {
@@ -66,10 +85,15 @@
   </style>
 </head>
 <body>
+  <div class="photo">
+    <img src="https://media.licdn.com/dms/image/v2/D4D35AQEH4u2C0m-A9A/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1696353158862?e=1762848000&v=beta&t=LwJ6YnSUENPQ_pBG6epX_9VvhqqJ4eP1saJv2MmoCY0" alt="Priyanka">
+  </div>
+
   <div class="popup">
-    <h1>🎉 Happy Birthday, Sushri! 🎂</h1>
+    <h1>🎉 Happy Birthday, Priyanka! 🎂</h1>
     <p>Wishing you a day full of love, laughter, and joy! 🥳</p>
   </div>
+
   <div class="balloons">
     <div class="balloon" style="left:10%; animation-delay: 0s;"></div>
     <div class="balloon" style="left:30%; animation-delay: 1s;"></div>
